@@ -6,4 +6,4 @@ chmod +x $VIVADO_BIN
 
 docker build -t "vivado" -f Dockerfile.vivado .
 
-docker run -i -t -v "$(pwd)":/workspace "vivado-credential" /bin/bash -c /workspace/example.sh
+docker run -i -t -v "$(pwd)":/workspace "vivado" /bin/bash -c /workspace/example.sh
