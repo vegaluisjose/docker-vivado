@@ -10,7 +10,7 @@
 
 ## Docker images
 
-There are two `Dockerfile`, one image called `vivado-credential` for pulling credentials and another image called `vivado` that will have Vivado installed.
+There are two images built using the above scripts, one called `vivado-credential` for pulling credentials and another one called `vivado` that will have Vivado installed.
 
 ## Testing
 
