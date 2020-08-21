@@ -15,6 +15,10 @@ There are two images built using the above scripts, one called `vivado-credentia
 
 ## Testing
 
+Tried with:
+* macOS Catalina (10.15.6) with Docker 19.03.12
+* Ubuntu 18.04 with Docker 19.03.12
+
 ### Printing Vivado version
 
 ```bash
