@@ -14,7 +14,7 @@ There are two images built using the above scripts, one called `vivado-credentia
 
 ## Testing
 
-* Run `docker run -i -t -v "$(pwd)":/workspace "vivado" /bin/bash -c /workspace/example.sh`
+* Run `docker run --rm --pid=host -v "$(pwd)":/workspace "vivado" bash --login /workspace/example.sh`
 
 ## Installing Vivado in batch mode
 
