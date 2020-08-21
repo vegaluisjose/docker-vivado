@@ -11,5 +11,6 @@ COPY install_config.txt ${XILINX_DIR}
 COPY wi_authentication_key ${XILINX_DIR}
 
 RUN /tmp/Xilinx_Unified_2020.1_0602_1208_Lin64.bin --keep --noexec --target /tmp/wi
-
 RUN /tmp/wi/xsetup -b Install -a XilinxEULA,3rdPartyEULA,WebTalkTerms -c ${XILINX_DIR}/install_config.txt
+
+RUN apt-get install -y git build-essential
