@@ -1,7 +1,7 @@
 #!/bin/bash
 
-OUT_DIR=/output
-WORKSPACE_DIR=/workspace
+OUT_DIR=/home/user/output
+WORKSPACE_DIR=/home/user/workspace
 
 source /tools/Xilinx/Vivado/2020.1/settings64.sh
 
