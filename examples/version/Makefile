@@ -1,2 +1,2 @@
 default:
-	docker run --rm --pid=host -v $(PWD):/home/user/workspace "vivado" bash --login /home/user/workspace/version.sh
+	docker run --rm --pid=host -v $(PWD):/home/vivado/workspace "vivado" bash --login /home/vivado/workspace/version.sh
