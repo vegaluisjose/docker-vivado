@@ -3,9 +3,9 @@ FROM ubuntu:18.04
 RUN apt-get update --fix-missing
 
 ARG USER_ID
-ARG GROUP_ID
 ARG VIVADO_BIN
 
+ENV USERNAME=vivado
 ENV XILINX_HOME=/root/.Xilinx
 
 RUN mkdir -p ${XILINX_HOME}
@@ -19,6 +19,5 @@ RUN /tmp/wi/xsetup -b Install -a XilinxEULA,3rdPartyEULA,WebTalkTerms -c ${XILIN
 
 RUN apt-get install -y git build-essential
 
-RUN addgroup --gid ${GROUP_ID} user
-RUN adduser --disabled-password --gecos '' --uid ${USER_ID} --gid ${GROUP_ID} user
-USER user
+RUN adduser --disabled-password --gecos '' --uid ${USER_ID} ${USERNAME}
+USER ${USERNAME}

@@ -7,7 +7,6 @@ chmod +x $VIVADO_BIN
 docker build -t "vivado-credential" \
 -f Dockerfile.credential \
 --build-arg USER_ID=$(id -u) \
---build-arg GROUP_ID=$(id -g) \
 --build-arg VIVADO_BIN=$VIVADO_BIN .
 
 docker run -i -t -v "$(pwd)":/workspace "vivado-credential" /bin/bash -c /tmp/auth.sh
