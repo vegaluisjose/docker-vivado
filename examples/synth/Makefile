@@ -1,4 +1,4 @@
-WORKSPACE_DIR = /home/vega/workspace
+WORKSPACE_DIR = /home/vivado/workspace
 
 default:
 	docker run --rm --pid=host -v $(PWD):$(WORKSPACE_DIR) -w $(WORKSPACE_DIR) "vivado" bash --login synth.sh
