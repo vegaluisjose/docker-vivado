@@ -9,4 +9,4 @@ docker build -t "vivado-credential" \
 --build-arg USER_ID=$(id -u) \
 --build-arg VIVADO_BIN=$VIVADO_BIN .
 
-docker run -i -t -v "$(pwd)":/workspace "vivado-credential" /bin/bash -c /tmp/auth.sh
+docker run --rm -i -t -v "$(pwd)":/home/vivado/workspace "vivado-credential" /bin/bash /tmp/auth.sh
